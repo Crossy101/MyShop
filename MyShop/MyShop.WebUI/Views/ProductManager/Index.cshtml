@@ -23,34 +23,39 @@
         <th>
             @Html.DisplayNameFor(model => model.Category)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Image)
-        </th>
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
-            £@Html.DisplayFor(modelItem => item.Price)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Category)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Image)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class="btn btn-info" }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class="btn btn-danger" })
-        </td>
-    </tr>
-}
 
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @{
+                    if (item.Image != null)
+                    {
+                        <img class="img-rounded" style="height:100px;" src="~/Content/ProductImages/@item.Image" />
+                    }
+                    else
+                    {
+                        <img class="img-rounded" style="height:50px;" src="~/Content/ProductImages/noimage.png" />
+                    }
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                £@Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class = "btn btn-info" }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
 </table>
+
