@@ -49,17 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataContext.cs" />
-    <Compile Include="Migrations\201908231556589_Intial.cs" />
-    <Compile Include="Migrations\201908231556589_Intial.Designer.cs">
-      <DependentUpon>201908231556589_Intial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908240159104_24082019.cs" />
-    <Compile Include="Migrations\201908240159104_24082019.Designer.cs">
-      <DependentUpon>201908240159104_24082019.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908242341221_25082019.cs" />
-    <Compile Include="Migrations\201908242341221_25082019.Designer.cs">
-      <DependentUpon>201908242341221_25082019.cs</DependentUpon>
+    <Compile Include="Migrations\201908251530413_Intial.cs" />
+    <Compile Include="Migrations\201908251530413_Intial.Designer.cs">
+      <DependentUpon>201908251530413_Intial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,14 +68,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201908231556589_Intial.resx">
-      <DependentUpon>201908231556589_Intial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908240159104_24082019.resx">
-      <DependentUpon>201908240159104_24082019.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908242341221_25082019.resx">
-      <DependentUpon>201908242341221_25082019.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201908251530413_Intial.resx">
+      <DependentUpon>201908251530413_Intial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
