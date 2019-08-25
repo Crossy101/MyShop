@@ -107,7 +107,7 @@ namespace MyShop.WebUI.Controllers
                 productToEdit.Name = product.Name;
                 productToEdit.Category = product.Category;
                 productToEdit.Price = product.Price;
-                productToEdit.Description = product.Category;
+                productToEdit.Description = product.Description;
 
                 productContext.Commit();
 
