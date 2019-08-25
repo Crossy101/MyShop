@@ -6,7 +6,6 @@ using System.Data.Entity;
 using System.Web.Mvc;
 using MyShop.Core.Models;
 using MyShop.Core.ViewModels;
-using MyShop.DataAccess.InMemory;
 using MyShop.Core.Contracts;
 using System.IO;
 
